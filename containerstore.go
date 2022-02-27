@@ -200,7 +200,6 @@ func containersFromProto(containerspb []containersapi.Container) []containers.Co
 	var containers []containers.Container
 
 	for _, container := range containerspb {
-		container := container
 		containers = append(containers, containerFromProto(&container))
 	}
 
